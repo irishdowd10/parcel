@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Parcel Form</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Tell us about your package</h1>
+    <form action='/info'>
+      <div class='form-group'>
+        <label for='weight'>The package's weight</label>
+        <input id='weight' name='weight' class='form-control' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='height'>Your package's height</label>
+        <input id='height' name='height' class='form-control' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='width'>Your package's width</label>
+        <input id='width' name='width' class='form-control' type='text'>
+      </div>
+      <div class='form-group'>
+        <label for='length'>Your package's length</label>
+        <input id='length' name='length' class='form-control' type='text'>
+      </div>
+      <button type='submit' class='btn'>Calculate</button>
+    </form>
+  </body>
+</html>
