@@ -9,11 +9,10 @@ namespace parcel
     {
        Get["/info"] = _ => {
         ParcelVariables myParcelVariables = new ParcelVariables();
-        myParcelVariables.SetName(Request.Query["name"]);
-        myParcelVariables.SetPlace(Request.Query["place"]);
-        myParcelVariables.SetAction(Request.Query["action"]);
-        myParcelVariables.SetAdjective(Request.Query["adjective"]);
-        myParcelVariables.SetAge(Request.Query["age"]);
+        myParcelVariables.SetWeight(Request.Query["eight"]);
+        myParcelVariables.SetWidth(Request.Query["width"]);
+        myParcelVariables.SetHeight(Request.Query["height"]);
+        myParcelVariables.SetLength(Request.Query["Length"]);
         return View["info.cshtml", myWParcelVariables];
       };
       Get["/"] = _ => {
